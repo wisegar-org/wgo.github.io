@@ -35,7 +35,7 @@ export default defineComponent({
   name: "UpdatingPage",
   components: {},
   setup() {
-    const screenH = screen.availHeight - screen.availHeight * 0.15;
+    const screenH = screen.availHeight - screen.availHeight * 0.2;
     const divStyle = `height: ${screenH}px;`;
     return { screenH, divStyle };
   },
