@@ -6,7 +6,7 @@
   "author": "Yariel Rodriguez <yariel.re@gmail.com>",
   "private": true,
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "build": "rimraf .\\dist\\ && quasar build &&  xcopy .\\dist\\spa\\ .\\docs\\  /Y /f /s"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
