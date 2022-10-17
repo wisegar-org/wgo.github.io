@@ -10,7 +10,7 @@
   <div class="q-pa-md q-gutter-md">
     <div class="row justify-between update" :style="divStyle">
       <div class="text-center items-center"></div>
-      <div class="q-pt-xl text-center items-center" :style="divInnerStyle">
+      <div class="q-pt-xl text-center items-center">
         <img
           src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"
           style="width: 150px; height: 150px"
@@ -35,11 +35,9 @@ export default defineComponent({
   name: "UpdatingPage",
   components: {},
   setup() {
-    const screenH = screen.availHeight - screen.availHeight * 0.1;
-    const topPos = screenH - screenH / 3;
-    const divStyle = `height: ${screenH}px; top: ${topPos}`;
-    const divInnerStyle = `margin-top: ${topPos}`;
-    return { screenH, divStyle, divInnerStyle };
+    const screenH = screen.availHeight - screen.availHeight * 0.15;
+    const divStyle = `height: ${screenH}px;`;
+    return { screenH, divStyle };
   },
 });
 </script>
